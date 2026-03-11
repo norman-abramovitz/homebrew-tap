@@ -5,20 +5,20 @@
 class Modrot < Formula
   desc "Detect archived/deprecated dependencies and inactive projects in go.mod files"
   homepage "https://github.com/norman-abramovitz/modrot"
-  version "0.5.1"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/norman-abramovitz/modrot/releases/download/v0.5.1/modrot_0.5.1_darwin_amd64.tar.gz"
-      sha256 "88d2783d9fc1f00cd4ffb6a34de06766ca6f5d67fb3857206fb90e9fcbb0ea92"
+      url "https://github.com/norman-abramovitz/modrot/releases/download/v0.6.0/modrot_0.6.0_darwin_amd64.tar.gz"
+      sha256 "310739e5c9f4a47dcae2067afff554c886828c80c978b8fca89b7b0a6197fb7b"
 
       define_method(:install) do
         bin.install "modrot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/norman-abramovitz/modrot/releases/download/v0.5.1/modrot_0.5.1_darwin_arm64.tar.gz"
-      sha256 "b56761eb3fe3bbff05f667dc1216b793ba26a9b38f65f0fcbe17802f06234138"
+      url "https://github.com/norman-abramovitz/modrot/releases/download/v0.6.0/modrot_0.6.0_darwin_arm64.tar.gz"
+      sha256 "33404621d447fba0f247230de4d86556acada746861421a3eac0b4b859caa736"
 
       define_method(:install) do
         bin.install "modrot"
@@ -28,15 +28,15 @@ class Modrot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/norman-abramovitz/modrot/releases/download/v0.5.1/modrot_0.5.1_linux_amd64.tar.gz"
-      sha256 "360c8e613381d7a3ff7e488a82ddd6f35eeed3160a207a7e1520fd43f7dc99df"
+      url "https://github.com/norman-abramovitz/modrot/releases/download/v0.6.0/modrot_0.6.0_linux_amd64.tar.gz"
+      sha256 "4c8c393ae51eea55db4be76f0e3bb9d61cd3929a34ed46bb152580162da421cc"
       define_method(:install) do
         bin.install "modrot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/norman-abramovitz/modrot/releases/download/v0.5.1/modrot_0.5.1_linux_arm64.tar.gz"
-      sha256 "7b0ba1ebf608033f8d13899e00e91b3fecb3f59265769b7c25a10f0a6967fa93"
+      url "https://github.com/norman-abramovitz/modrot/releases/download/v0.6.0/modrot_0.6.0_linux_arm64.tar.gz"
+      sha256 "12e0b0e6404abb6aad6ac9fb4463a0f3e44fe618c57047de71135edcaaff2441"
       define_method(:install) do
         bin.install "modrot"
       end
